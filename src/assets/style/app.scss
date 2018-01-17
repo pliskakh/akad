@@ -1,0 +1,325 @@
+@import "bootstrap-variables";
+@import "bootstrap-custom";
+
+@import "slick.scss";
+
+@import "nav";
+@import "contact";
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700%7COpen+Sans:400,400i,800');
+@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+body{
+	font: 400 14px/2.2 'Open Sans', sans-serif;
+	background-color: #ffffff;
+	color: #60606e;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+	font-family: $headings-font-family;
+	line-height: 1.5;
+}
+
+a {
+	color: $brand-primary;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #60606e;
+}
+
+.ba-intro {
+	background-size: cover;
+}
+
+.ba-intro__body {
+	padding: 188px 0 165px;
+}
+
+.ba-page-title {
+	text-transform: uppercase;
+	margin: 0 0 13px;
+}
+
+.ba-breadcrumbs {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.ba-breadcrumbs li {
+	display: inline-block;
+	font: 700 14px/1 'Montserrat', sans-serif;
+}
+
+.ba-breadcrumbs li:not(:first-child):before {
+	content: "/";
+	margin: 0 4px;
+}
+
+.ba-breadcrumbs a,
+.ba-breadcrumbs span {
+	color: #60606e;
+	text-transform: uppercase;
+}
+
+.ba-breadcrumbs a:hover {
+	text-decoration: underline;
+}
+
+button{
+	font: $headings-font-family;
+	text-transform: uppercase;
+
+}
+
+.ba-title {
+	text-transform: uppercase;
+	margin: 0 0 12px;
+	&--subscribe{
+		color: #fff;
+	}
+}
+
+.ba-title span {
+	display: inline-block;
+	position: relative;
+}
+
+.ba-title span:before {
+	position: absolute;
+	content: "";
+	background-color: $brand-primary;
+	width: 68px;
+	height: 21px;
+	z-index: -1;
+	left: 0;
+	bottom: 3px;
+}
+
+.ba-subtitle {
+	font-family: $font-family-base;
+	font-weight: 800;
+	margin: 0 0 16px;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+.ba-section {
+	padding-top: 140px;
+	
+	&__head{
+		text-align: center;
+		margin: 0 auto 90px;
+		padding-top: 6px;
+		max-width: 750px;
+	}
+
+	&__title{
+		margin-bottom: 8px;
+	}
+}
+
+.ba-benefits{
+	&-row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&-column{
+		margin-bottom: 44px;
+	}
+}
+
+.ba-benefit{
+	&-title{
+		margin: 0 0 10px;
+		text-transform: uppercase;
+		&__icon{
+			display: inline-block;
+			font-size: 30px;
+			background-color: $brand-primary;
+			width: 40px;
+			height: 40px;
+			color: #FFF;
+			line-height: 42px;
+			text-align: center;
+			vertical-align: middle;
+			margin-right: 13px;
+		}
+		&__text{
+			vertical-align: middle;
+			display: inline-block;
+			line-height: 1.1;
+			font-size: 18px;
+			width: calc(100% - 64px);
+		}
+	}
+}
+
+/* .ba-benefits-row + .ba-benefits-row {
+	margin-top: 44px;
+} */
+
+.ba-team, .ba-client{
+	&-column{
+		margin-bottom: 30px;
+	}
+}
+
+.ba-client{
+	&-column{
+		img{
+			max-width: 100%; 
+			//height: 100px;
+		}
+	}
+	&__member{
+		text-align: center;
+		height: 100px;
+		border: solid 1px rgba(0,0,0,.1);
+    	padding: 10px 20px;
+	}
+}
+
+.ba-dude{
+	&__img{
+		margin: 0 auto;
+		padding-bottom: 25px;
+	}
+	&__text{
+		line-height: 2.14;
+	}
+	&__label{
+		font-family: $headings-font-family; 
+		text-transform: uppercase;
+		padding: 0 10px;
+		margin-bottom: 30px;
+	}
+}
+
+.slick{
+	&-dots{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		
+		li{
+			display: inline-block;
+			
+			button{
+				background-color: #60606e;
+				width: 16px;
+				height: 5px;
+				bottom: 0;
+				overflow: hidden;
+				margin-left: 5px;
+				border: 0;
+				transition: width 0.3s ease-in , background-color 0.6s;
+			}
+
+			&.slick-active{
+				button{
+					width: 32px;
+					background-color:  $brand-primary;
+				}
+			}
+		}
+	}
+}
+
+.ba-read-more{
+	background:  rgba(96, 96, 110, 0.1); 
+	padding: 50px 30px; 
+	p{
+		font-size: 18px; 
+		font-style: italic;
+		line-height: 48px;
+		float: left;
+		margin: 0;
+	}
+	button{
+		font-family: $headings-font-family;
+		float: right;
+		height: 50px;
+		padding: 0 40px; 
+	}
+}
+
+.ba-subscribe{
+	background-color:  $brand-primary;
+	padding: 50px 0;
+	&__button{
+		margin-bottom: 30px;
+		height: 49px;
+		background: #FFF;
+		color: $brand-primary;
+		padding: 0 30px;
+		border-radius: 0;  
+		font-weight: 700;
+		border: 1px solid transparent;
+		transition: border, background, color .3s ease-in;
+		&:hover{
+			background: $brand-primary;
+			color: #fff; 
+			border: 1px solid currentColor;
+		}
+	}
+	&__newsletter{
+		background-color: #FFF; 
+		padding: 25px 20px;
+		margin-top: 0; 
+		p{
+			color:  #999999;
+		}
+	}
+	&-form{
+		max-width: 510px;
+		display: flex;
+		&__input{
+			flex-grow: 1;
+			height: 50px;
+			padding: 0 20px; 
+			
+			font-family: $headings-font-family;
+			color:  #cdcdcd;
+			font-size: 12px;
+			font-weight: 700;
+			text-transform: uppercase;
+			&::placeholder{
+				color: currentColor;
+			}
+		}
+		&__button2{
+			font-family: $headings-font-family;
+			border-radius: 0;
+			padding: 0 20px; 
+		}
+	}
+}
+
+.ba{
+	&-row{
+		&-flex{
+			//display: flex;
+			//flex-wrap: wrap;
+		}
+	}
+	&-map{
+		height: 841px;
+	}
+}
