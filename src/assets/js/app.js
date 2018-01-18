@@ -8,6 +8,22 @@
 
 ;(function($){
 
+	// var worksGrid = $('.ba-works-grid');
+			
+	// worksGrid.isotope({
+	// 	itemSelector: '.ba-grid-item',
+	// 	percentPosition: true,
+	// 	masonry: {
+	// 		columnWidth: '.grid-sizer',
+	// 	}
+	// });
+
+	// $('.ba-gallery').on('click', '[data-filter]', function(e){
+	// 	e.preventDefault();
+	// 	var filterValue = $(this).data('filter');
+	// 	worksGrid.isotope({filter: filterValue});
+	// });
+
 	$(document).ready(function(){
 		var $slider = $('.ba-slider');
 
@@ -19,6 +35,8 @@
 			slide: '.ba-slide'
 		});
 	});
+
+
 
 	function initMap() {
 

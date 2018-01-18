@@ -19,6 +19,22 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 
 ;(function($){
 
+	// var worksGrid = $('.ba-works-grid');
+			
+	// worksGrid.isotope({
+	// 	itemSelector: '.ba-grid-item',
+	// 	percentPosition: true,
+	// 	masonry: {
+	// 		columnWidth: '.grid-sizer',
+	// 	}
+	// });
+
+	// $('.ba-gallery').on('click', '[data-filter]', function(e){
+	// 	e.preventDefault();
+	// 	var filterValue = $(this).data('filter');
+	// 	worksGrid.isotope({filter: filterValue});
+	// });
+
 	$(document).ready(function(){
 		var $slider = $('.ba-slider');
 
@@ -30,6 +46,8 @@ this.activeTarget=b,this.clear();var c=this.selector+'[data-target="'+b+'"],'+th
 			slide: '.ba-slide'
 		});
 	});
+
+
 
 	function initMap() {
 
