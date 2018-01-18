@@ -1,10 +1,13 @@
+@import "bootstrap-sprockets";
 @import "bootstrap-variables";
 @import "bootstrap-custom";
+@import "mixins";
 
 @import "slick.scss";
 
 @import "nav";
 @import "contact";
+@import "footer";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700%7COpen+Sans:400,400i,800');
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
@@ -24,13 +27,41 @@ h1, h2, h3, h4 ,h5, h6 {
 	line-height: 1.5;
 }
 
-a {
-	color: $brand-primary;
-	text-decoration: none;
-}
+// a {
+// 	color: $brand-primary;
+// 	text-decoration: none;
+// }
 
-a:hover {
-	color: #60606e;
+// a:hover {
+// 	color: #60606e;
+// }
+
+.btn{
+		@include ba-transition;
+		display: inline-block;
+		background: $brand-primary;
+		color: #fff;
+		font: 700 14px/50px $headings-font-family;
+		padding: 0 32px;
+		text-decoration: none;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 0;
+		height: 50px;
+		&:hover, &:focus{
+			background: darken($brand-primary, 20%);
+			color: #fff;
+			text-decoration: none;
+		}
+		&--light{
+			background: #fff;
+			color: $brand-primary;
+			&:hover, &:focus{
+				background: darken($brand-primary, 5%);
+				color: #fff;
+				border: 1px dotted currentColor;
+			}
+		}
 }
 
 .ba-intro {
@@ -322,4 +353,12 @@ p:last-child {
 	&-map{
 		height: 841px;
 	}
+}
+
+.form-control{
+	box-shadow: none;
+	font-weight: 700;
+	font-size: 12px;
+	font-family: $headings-font-family;
+	text-transform: uppercase;
 }

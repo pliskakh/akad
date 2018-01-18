@@ -22,8 +22,7 @@
 
 	function initMap() {
 
-		var mapBlock = document.querySelector('.ba-map'),
-			address = mapBlock.innerHTML;
+		var mapBlock = document.querySelector('.ba-map');
 
 		var poltava = {
 			lat: 49.588267,

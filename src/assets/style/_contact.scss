@@ -12,4 +12,15 @@
       }
     }
   }
+  &-textarea{
+    resize: none;
+  }
+  &__link{
+    &:hover{
+      text-decoration: none;
+    }
+    &--mail{
+      font-weight: 700;
+    }
+  }
 }
