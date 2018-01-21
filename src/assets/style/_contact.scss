@@ -24,3 +24,13 @@
     }
   }
 }
+
+.ba-map{
+  height: 300px;
+  @include breakpoint(sm){
+    height: 500px;
+  }
+  @include breakpoint(md){
+    height: 841px;
+  }
+}
