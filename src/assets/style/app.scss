@@ -99,7 +99,6 @@ h1, h2, h3, h4 ,h5, h6 {
 	max-width: 580px;
 	margin: 0 auto;
 	font-size: 16px;
-
 }
 
 .ba-page-title {
@@ -260,10 +259,6 @@ p:last-child {
 	}
 }
 
-/* .ba-benefits-row + .ba-benefits-row {
-	margin-top: 44px;
-} */
-
 .ba-team, .ba-client{
 	&-column{
 		margin-bottom: 30px;
@@ -384,7 +379,7 @@ p:last-child {
 			flex-grow: 1;
 			height: 50px;
 			padding: 0 20px; 
-			
+			background: #fff;
 			font-family: $headings-font-family;
 			color:  #cdcdcd;
 			font-size: 12px;
@@ -424,5 +419,23 @@ p:last-child {
 				text-decoration: none;
 			}
 		}
+	}
+}
+
+.why-choose{
+	&__list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			text-transform: uppercase;
+		}
+	}
+	&__icon{
+		font-size: 36px;
+		line-height: 1;
+	}
+	&__item{
+		margin-bottom: 60px;
 	}
 }
