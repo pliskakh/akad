@@ -9,10 +9,11 @@
 @import "services";
 @import "portfolio";
 @import "contact";
+@import "blog";
 @import "footer";
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700%7COpen+Sans:400,400i,800');
-@import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
 
 img{
 	max-width: 100%;
@@ -22,22 +23,12 @@ img{
 body{
 	font: 400 14px/2.2 'Open Sans', sans-serif;
 	background-color: #ffffff;
-
 }
 
 h1, h2, h3, h4 ,h5, h6 {
 	font-family: $headings-font-family;
 	line-height: 1.5;
 }
-
-// a {
-// 	color: $brand-primary;
-// 	text-decoration: none;
-// }
-
-// a:hover {
-// 	color: #60606e;
-// }
 
 .btn{
 		@include ba-transition;

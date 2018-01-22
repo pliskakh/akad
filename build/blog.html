@@ -59,54 +59,223 @@
     <div class="container">
       <section class="ba-intro__body text-center">
         <h1 class="ba-page-title">Blog Posts</h1>
-        <ul class="ba-breadcrumbs">
+        <ul class="breadcrumb">
           <li>
             <a href="#">Home</a>
           </li>
-          <li>
+          <li class="active">
             <span>Blog</span>
           </li>
         </ul>
       </section>
     </div>
   </div>
+  <!-- end .ba-intro -->
 
-  <main>
-    <div class="container">
+  <div class="container ba-section">
+    <div class="row">
+      <div class="col-md-8">
+        <main> 
+          <article class="ba-post">
+            <a href="single-post.html" class="ba-post__img">
+              <img src="./assets/img/news/article-image.jpg" alt="THE BIG LEAGUES OUR TURN STRAIGHTNIN">
+            </a>
+            <div class="ba-post__meta">
+              <time class="ba-post__date bg-primary" datetime="2015-10-13">October 13, 2015</time>
+              <span class="ba-post__comments">
+                <i class="ion-chatbox-working"></i>
+                8
+              </span>
+              <span class="ba-post__likes">
+                  <i class="ion-ios-heart text-danger"></i>
+                  15
+              </span>
+            </div>
+            <!-- /.ba-post__meta -->
+            <h2 class="ba-post__title">
+              <a href="single-post.html" >
+                  THE BIG LEAGUES OUR TURN STRAIGHTNIN
+              </a>
+            </h2>
+            <div class="ba-post__excerpt">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+            <!-- /.ba-post__excerpt -->
+            <a href="single-post.html" class="ba-post__more">
+                Continue reading
+                <i class="ion-arrow-right-c"></i>
+            </a>
+          </article>
+          <!-- /.ba-post -->
+        </main>
+      </div>
+      <!-- /.col-md-8 -->
+      <div class="col-md-3 col-md-offset-1">
+        <aside class="ba-sidebar">
+          <div class="ba-widget">
+            <form action="#" class="ba-search-form">
+              <input type="search" name="search" placeholder="SEARCH..." required>
+              <button type="submit">
+                <i class="ion-search"></i>  
+              </button>
+            </form>
+          </div>
+          <!-- /.ba-widget -->
+          <div class="ba-widget">
+            <h6 class="ba-widget__title">Posts</h6>
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#latest" aria-controls="latest" role="tab" data-toggle="tab">latest</a>
+                </li>
+                <li role="presentation">
+                  <a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">popular</a>
+                </li>
+                <li role="presentation">
+                  <a href="#comments" aria-controls="comments" role="tab" data-toggle="tab">comments</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="latest">...</div>
+                <div role="tabpanel" class="tab-pane" id="popular">...</div>
+                <div role="tabpanel" class="tab-pane" id="comments">...</div>
+              </div>
+
+          </div>
+          <!-- /.ba-widget -->
+        </aside>
+      </div>
     </div>
-    <!-- /. container -->
-  </main>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+
+
+
 
   <!-- subscribe section -->
+
+
+
   <section class="ba-section">
+
+
+
   	<div class="ba-subscribe">
+
+
+
   		<div class="container">
+
+
+
   			<div class="row">
+
+
+
   				<div class="col-md-6">
+
+
+
   					<div class="ba-call-to-action">
+
+
+
   							<h2 class="ba-title ba-title--subscribe">
+
+
+
   									YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+
+
+
   								</h2>
+
+
+
   								<button class="btn btn--light">
+
+
+
   									get in touch
+
+
+
   								</button>
+
+
+
   					</div>
+
+
+
   					<!-- /.ba-call-to-action -->
+
+
+
   				</div>
+
+
+
   				<div class="col-md-6">
+
+
+
   					<div class="ba-subscribe__newsletter">
+
+
+
   						<h3 class="ba-title">STAY INFORMED WITH OUR NEWSLETTER</h3>
+
+
+
   						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+
+
+
   							aliqua.</p>
+
+
+
   						<form class="ba-subscribe-form" method="POST" action="#">
+
+
+
   							<input class="form-control" type="email" placeholder="your email" required>
+
+
+
   							<button class="btn">send</button>
+
+
+
   						</form>
+
+
+
   					</div>
+
+
+
   				</div>
+
+
+
   			</div>
+
+
+
   		</div>
+
+
+
   	</div>
+
+
+
   </section>
   <footer class="ba-footer">
   	<div class="container">

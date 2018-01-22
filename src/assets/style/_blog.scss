@@ -1,0 +1,89 @@
+.ba-post{
+  margin-bottom: 50px;
+  @include breakpoint(md){
+    margin-bottom: 100px;
+  }
+  &__img{
+    display: block;
+    margin-bottom: $grid-gutter-width;
+    overflow: hidden;
+    img{
+      display: block;
+      transform-origin: 40% 100%;
+      transition: transform .3s ease-in;
+    }
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+    }
+  }
+  &__title{
+    font-size: 18px;
+    margin: 0 0 15px;
+  }
+  &__meta{
+    margin-bottom: 25px;
+    color: #ccc;
+    span{
+      margin: 0 2px 0 10px;
+    }
+    [class*='ion-']{
+      font-size: 18px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__date{
+    font: 700 14px/1 $headings-font-family;
+    text-transform: uppercase;
+    padding: 5px 15px;
+  }
+  &__excerpt{
+    margin-bottom: 25px;
+  }
+  &__more{
+    text-transform: uppercase;
+    font: 700 14px/1 4headings-font-family;
+  }
+}
+
+.ba-widget{
+  margin-bottom: 45px;
+  &__title{
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+
+.nav-tabs{
+  border-bottom: 2px solid #e3e3e3;
+  & > li {
+    margin-bottom: -2px;
+    &.active{
+      & > a {
+        border-color: transparent transparent $brand-primary;
+        background: none;
+        color: $text-color;
+        border-width: 0 0 2px;
+        &:hover, &:active, &:focus{
+          border-width: 0 0 2px;
+          border-color: transparent;
+          background: none;
+          color: $text-color; 
+        }
+      }
+    }
+    & > a {
+      font: 700 12px/1 $headings-font-family;
+      color: #999999;
+      text-transform: uppercase;
+      border-width: 0 0 2px;
+      &:hover, &:active, &:focus{
+        border-color: transparent;
+        background: none;
+        color: $text-color; 
+      }
+    }
+  }
+}

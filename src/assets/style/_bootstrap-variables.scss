@@ -25,7 +25,7 @@ $brand-primary:         #7beec7;
 $brand-success:         #5cb85c;
 $brand-info:            #5bc0de;
 $brand-warning:         #f0ad4e;
-$brand-danger:          #d9534f;
+$brand-danger:          #ea6a6a;
 
 
 //== Scaffolding
@@ -520,7 +520,7 @@ $state-warning-text:             #8a6d3b;
 $state-warning-bg:               #fcf8e3;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%);
 
-$state-danger-text:              #a94442;
+$state-danger-text:              $brand-danger;
 $state-danger-bg:                #f2dede;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%);
 
