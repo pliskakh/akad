@@ -34,47 +34,19 @@
     <div class="row">
       <div class="col-md-8">
         <main> 
-          <article class="ba-post">
-            <a href="single-post.html" class="ba-post__img">
-              <img src="./assets/img/news/article-image.jpg" alt="THE BIG LEAGUES OUR TURN STRAIGHTNIN">
-            </a>
-            <div class="ba-post__meta">
-              <time class="ba-post__date bg-primary" datetime="2015-10-13">October 13, 2015</time>
-              <span class="ba-post__comments">
-                <i class="ion-chatbox-working"></i>
-                8
-              </span>
-              <span class="ba-post__likes">
-                  <i class="ion-ios-heart text-danger"></i>
-                  15
-              </span>
-            </div>
-            <!-- /.ba-post__meta -->
-            <h2 class="ba-post__title">
-              <a href="single-post.html" >
-                  THE BIG LEAGUES OUR TURN STRAIGHTNIN
-              </a>
-            </h2>
-            <div class="ba-post__excerpt">
-              <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-            </div>
-            <!-- /.ba-post__excerpt -->
-            <a href="single-post.html" class="ba-post__more">
-                Continue reading
-                <i class="ion-arrow-right-c"></i>
-            </a>
-          </article>
-          <!-- /.ba-post -->
+
+          //=include templates/post.html
+          //=include templates/post.html
+          //=include templates/post.html
+
         </main>
       </div>
       <!-- /.col-md-8 -->
       <div class="col-md-3 col-md-offset-1">
         <aside class="ba-sidebar">
           <div class="ba-widget">
-            <form action="#" class="ba-search-form">
-              <input type="search" name="search" placeholder="SEARCH..." required>
+            <form action="#" class="ba-search-form ba-search-form--blog">
+              <input class="form-control" type="search" name="search" placeholder="SEARCH..." required>
               <button type="submit">
                 <i class="ion-search"></i>  
               </button>
@@ -97,13 +69,115 @@
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="latest">...</div>
-                <div role="tabpanel" class="tab-pane" id="popular">...</div>
-                <div role="tabpanel" class="tab-pane" id="comments">...</div>
+                <div role="tabpanel" class="tab-pane active" id="latest">
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/01.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/02.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/03.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="popular">
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/01.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/01.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                </div>
+                <div role="tabpanel" class="tab-pane" id="comments">
+                  <article class="ba-sidebar-post">
+                    <a class="ba-sidebar-post__img" href="single-post.html">
+                      <img src="./assets/img/news/small/01.png" alt="new 1" />
+                    </a>
+                    <div class="ba-sidebar-post__text">
+                      <a href="single-post.html">Magna mollis ultricies</a>
+                      <time datetime="2012-10-03">3th oct 2012</time>
+                    </div>
+                    <!-- /.ba-sidebar-post__text -->
+                  </article>
+                  <!-- /.ba-sidebar-post -->
+                </div>
               </div>
-
           </div>
           <!-- /.ba-widget -->
+          <div class="ba-widget">
+            <h6 class="ba-widget__title">categories</h6>
+						<ul class="ba-categories__list">
+							<li>Business<span class="ba-categories__number">15</span></li>
+							<li>Photography<span class="ba-categories__number">17</span></li>
+							<li>Journal<span class="ba-categories__number">22</span></li>
+							<li>Web devlopment<span class="ba-categories__number">30</span></li>
+						</ul>
+					</div>
+					<!-- /.ba-widget -->
+					<div class="ba-widget">
+            <h6 class="ba-widget__title">tags</h6>
+						<ul class="ba-tags__list">
+							<li><a href="#">CSS</a></li>
+              <li><a href="#">javascript</a></li>
+							<li><a href="#">jquery</a></li>
+							<li><a href="#">html5</a></li>
+							<li><a href="#">bootstrap</a></li>
+							<li><a href="#">css</a></li>
+							<li><a href="#">javascript</a></li>
+							<li><a href="#">jquery</a></li>
+						</ul>
+					</div>
+					<!-- /.ba-widget -->
+					<div class="ba-widget">
+            <h6 class="ba-widget__title">archives</h6>
+						<ul class="ba-categories__list">
+							<li>Business<span class="ba-categories__number">15</span></li>
+							<li>Photography<span class="ba-categories__number">17</span></li>
+							<li>Journal<span class="ba-categories__number">22</span></li>
+							<li>Web devlopment<span class="ba-categories__number">30</span></li>
+						</ul>
+					</div>
+					<!-- /.ba-widget -->
         </aside>
       </div>
     </div>
